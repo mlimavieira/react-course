@@ -8,6 +8,7 @@ import {auth, signInWithGoogle} from '../../firebase/firebase.utils';
 import './sign-in.styles.scss';
 
 class SignIn extends React.Component {
+    
     constructor(props) {
         super(props);
 
@@ -29,7 +30,7 @@ class SignIn extends React.Component {
         } catch (error) {
             console.error(error);
         }
-    }
+    };
 
     handleChange = event => {
         const {value, name } = event.target;
