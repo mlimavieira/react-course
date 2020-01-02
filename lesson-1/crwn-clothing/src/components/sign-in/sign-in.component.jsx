@@ -8,14 +8,14 @@ import {auth, signInWithGoogle} from '../../firebase/firebase.utils';
 import './sign-in.styles.scss';
 
 class SignIn extends React.Component {
-    
+
     constructor(props) {
         super(props);
 
         this.state = {
             email: '',
             password: ''
-        }
+        };
     }
 
     handleSubmit = async event => {
@@ -35,7 +35,7 @@ class SignIn extends React.Component {
     handleChange = event => {
         const {value, name } = event.target;
         this.setState({[name]: value});
-    }
+    };
 
     render() {
         return (
